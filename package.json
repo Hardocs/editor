@@ -4,6 +4,7 @@
 	"description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
 	"version": "0.0.1",
 	"license": "SEE LICENSE IN LICENSE.md",
+	"main": "build/index.js",
 	"devDependencies": {
 		"@ckeditor/ckeditor5-autoformat": "^23.0.0",
 		"@ckeditor/ckeditor5-basic-styles": "^23.0.0",
@@ -36,6 +37,7 @@
 	},
 	"scripts": {
 		"build": "webpack --mode production",
-		"pub": "npm publish --registry http://localhost:4873"
+		"pub": "npm publish --registry http://localhost:4873",
+		"prepub": "yarn build"
 	}
 }
