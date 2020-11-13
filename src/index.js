@@ -9,10 +9,6 @@ import Autolink from '@ckeditor/ckeditor5-link/src/autolink.js';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter.js';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold.js';
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
-import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
-import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
-import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import ExportToPDF from '@ckeditor/ckeditor5-export-pdf/src/exportpdf.js';
 import ExportToWord from '@ckeditor/ckeditor5-export-word/src/exportword.js';
 import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor.js';
@@ -44,6 +40,19 @@ import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 
+import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
+import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
+import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
+import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
+import MathType from '@wiris/mathtype-ckeditor5';
+import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters.js';
+import SpecialCharactersMathematical from '@ckeditor/ckeditor5-special-characters/src/specialcharactersmathematical.js';
+import StandardEditingMode from '@ckeditor/ckeditor5-restricted-editing/src/standardeditingmode.js';
+import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
+import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
+
 class Editor extends BalloonEditor {}
 
 // Plugins to include in the build.
@@ -52,8 +61,6 @@ Editor.builtinPlugins = [
 	Autoformat,
 	Autolink,
 	Base64UploadAdapter,
-	BlockQuote,
-	Bold,
 	CKFinder,
 	Code,
 	CodeBlock,
@@ -87,6 +94,17 @@ Editor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
+	TextTransformation,
+	BlockQuote,
+	Bold,
+	CKFinderUploadAdapter,
+	Essentials,
+	MathType,
+	SpecialCharacters,
+	SpecialCharactersMathematical,
+	StandardEditingMode,
+	TableCellProperties,
+	TableProperties,
 	TextTransformation
 ];
 
@@ -100,11 +118,18 @@ Editor.defaultConfig = {
             'italic',
             'link',
             'bulletedList',
-            'numberedList',
+			'numberedList',
+			'|',
+			'indent',
+			'outdent',
+			'|',
             'imageUpload',
-            'blockQuote',
+			'blockQuote',
+			'table',
+			'codeBlock',
+			'|',
             'undo',
-            'redo'
+			'redo',
         ]
     },
     image: {
