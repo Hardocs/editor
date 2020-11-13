@@ -2,7 +2,8 @@
  * @license Copyright (c) 2014-2020, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
-import BalloonEditor from '@ckeditor/ckeditor5-editor-balloon/src/ballooneditor.js';
+import ClassicEditor from '@ckeditor/ckeditor5-editor-classic/src/classiceditor'
+// import BalloonEditor from '@ckeditor/ckeditor5-editor-balloon/src/ballooneditor.js';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment.js';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat.js';
 import Autolink from '@ckeditor/ckeditor5-link/src/autolink.js';
@@ -53,7 +54,7 @@ import StandardEditingMode from '@ckeditor/ckeditor5-restricted-editing/src/stan
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
 
-class Editor extends BalloonEditor {}
+class Editor extends ClassicEditor {}
 
 // Plugins to include in the build.
 Editor.builtinPlugins = [
