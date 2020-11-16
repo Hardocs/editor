@@ -41,7 +41,6 @@ import Table from '@ckeditor/ckeditor5-table/src/table.js';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
 
-import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote.js';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder.js';
 import CKFinderUploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
@@ -125,7 +124,7 @@ Editor.defaultConfig = {
 			'|',
             'imageUpload',
 			'blockQuote',
-			'table',
+			'insertTable',
 			'codeBlock',
 			'|',
             'undo',
