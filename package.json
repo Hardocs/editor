@@ -57,6 +57,7 @@
 	"scripts": {
 		"build": "webpack --mode production",
 		"pub": "npm publish --registry http://localhost:4873",
-		"prepub": "yarn build"
+		"prepub": "yarn build",
+		"publish": "npm publish"
 	}
 }
