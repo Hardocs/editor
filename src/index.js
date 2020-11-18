@@ -125,6 +125,10 @@ Editor.defaultConfig = {
 			'insertTable',
 			'codeBlock',
 			'|',
+			'mathType',
+			'chemType',
+			'specialCharacters',
+			'|',
             'undo',
 			'redo',
         ]
