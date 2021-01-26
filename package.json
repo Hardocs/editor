@@ -6,7 +6,7 @@
 		"url": "https://github.com/dnature"
 	},
 	"description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-	"version": "0.0.5-beta",
+	"version": "0.0.7-beta",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"main": "build/index.js",
 	"devDependencies": {
@@ -37,13 +37,11 @@
 		"@ckeditor/ckeditor5-paragraph": "^23.0.0",
 		"@ckeditor/ckeditor5-paste-from-office": "^23.0.0",
 		"@ckeditor/ckeditor5-restricted-editing": "^23.1.0",
-		"@ckeditor/ckeditor5-special-characters": "^23.1.0",
 		"@ckeditor/ckeditor5-table": "^23.1.0",
 		"@ckeditor/ckeditor5-theme-lark": "^23.1.0",
 		"@ckeditor/ckeditor5-typing": "^23.1.0",
 		"@ckeditor/ckeditor5-ui": "^23.1.0",
 		"@ckeditor/ckeditor5-upload": "^23.0.0",
-		"@wiris/mathtype-ckeditor5": "^7.24.1",
 		"all-contributors-cli": "^6.19.0",
 		"css-loader": "^4.3.0",
 		"postcss": "^8.1.1",

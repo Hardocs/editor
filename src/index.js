@@ -46,8 +46,6 @@ import Code from '@ckeditor/ckeditor5-basic-styles/src/code.js';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock.js';
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials.js';
 import MathType from '@wiris/mathtype-ckeditor5';
-import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters.js';
-import SpecialCharactersMathematical from '@ckeditor/ckeditor5-special-characters/src/specialcharactersmathematical.js';
 import StandardEditingMode from '@ckeditor/ckeditor5-restricted-editing/src/standardeditingmode.js';
 import TableCellProperties from '@ckeditor/ckeditor5-table/src/tablecellproperties';
 import TableProperties from '@ckeditor/ckeditor5-table/src/tableproperties';
@@ -96,9 +94,6 @@ Editor.builtinPlugins = [
 	BlockQuote,
 	Bold,
 	CKFinderUploadAdapter,
-	MathType,
-	SpecialCharacters,
-	SpecialCharactersMathematical,
 	StandardEditingMode,
 	TableCellProperties,
 	TableProperties,
@@ -125,11 +120,7 @@ Editor.defaultConfig = {
 			'insertTable',
 			'codeBlock',
 			'|',
-			'mathType',
-			'chemType',
-			'specialCharacters',
-			'|',
-            'undo',
+			'undo',
 			'redo',
         ]
     },
