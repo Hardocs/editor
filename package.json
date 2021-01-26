@@ -6,7 +6,7 @@
 		"url": "https://github.com/dnature"
 	},
 	"description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-	"version": "0.0.5-beta",
+	"version": "0.0.6-beta",
 	"license": "SEE LICENSE IN LICENSE.md",
 	"main": "build/index.js",
 	"devDependencies": {
