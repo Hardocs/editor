@@ -74,7 +74,6 @@ Editor.builtinPlugins = [
 	Image,
 	ImageCaption,
 	ImageInsert,
-	ImageResize,
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
